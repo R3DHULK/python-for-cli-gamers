@@ -1,8 +1,10 @@
 import time
 
+
 class YogaSimulator:
     def __init__(self):
-        self.poses = ["Mountain Pose", "Tree Pose", "Downward-Facing Dog", "Warrior I", "Warrior II"]
+        self.poses = ["Mountain Pose", "Tree Pose",
+                      "Downward-Facing Dog", "Warrior I", "Warrior II"]
         self.current_pose_index = 0
         self.current_pose = self.poses[self.current_pose_index]
 
@@ -37,3 +39,7 @@ class YogaSimulator:
             self.perform_pose()
 
         print("Namaste.")
+
+
+simulator = YogaSimulator()
+simulator.start_practice()
